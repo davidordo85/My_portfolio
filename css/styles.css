@@ -1,0 +1,48 @@
+/* Reset de CSS */
+
+/* Eliminar los márgenes y rellenos predeterminados */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Establecer una fuente y tamaño de fuente base */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Eliminar la lista de puntos predeterminada */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Eliminar la decoración de los enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Establecer el color de texto y el fondo a blanco */
+body {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Establecer el tamaño de caja de borde y eliminar el relleno */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
