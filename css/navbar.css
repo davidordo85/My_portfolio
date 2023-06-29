@@ -1,7 +1,40 @@
+.navbar {
+    position: fixed;
+    background-color: #888;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: 0.1rem solid black;
+    height: var(--navbar-height);
+}
+
+.logo {}
+
+
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    height: calc(100vh - var(--navbar-height));
+    opacity: 0.85;
+}
+
+.navbar-item a {
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+
 /* button menu */
 #toggleButton {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 0.5rem;
+
 }
