@@ -1,16 +1,16 @@
 export const navView = () => {
-  return `<nav>
-    <ul>
+  return `
+    <ul class="navbar-list">
       <li>
-        <a href="#">Inicio</a>
+        <a href="#">Home</a>
       </li>
-      <li><a href="#">Sobre mi</a></li>
+      <li><a href="#">About me</a></li>
       <li>
-        <a href="#">Proyectos</a>
+        <a href="#">Projects</a>
       </li>
       <li>
-        <a href="#">Contacto</a>
+        <a href="#">Contact</a>
       </li>
     </ul>
-  </nav>`;
+  `;
 };
