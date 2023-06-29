@@ -5,6 +5,7 @@ export default class ButtonNavbarController extends BaseController {
     super();
     this.buttonElement = document.getElementById(elementId);
     this.targetElement = document.getElementById(targetElementId);
+    this.targetElement.style.display = 'none';
     this.buttonElement.addEventListener(
       'click',
       this.toggleComponent.bind(this),

@@ -1,6 +1,7 @@
 .navbar {
     position: fixed;
-    background-color: #888;
+    background: linear-gradient(#141E30, #243B55);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
     top: 0;
     left: 0;
@@ -10,19 +11,17 @@
 
 .logo {}
 
-
-
 .container-list {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: black;
     height: calc(100vh - var(--navbar-height));
-    opacity: 0.85;
+    opacity: 0.65;
 }
 
 .navbar-item a {
-    color: white;
+    color: #C0C0C0;
     display: block;
     text-align: center;
     line-height: 3rem;
@@ -32,9 +31,9 @@
 
 /* button menu */
 #toggleButton {
-    background: none;
+    background: linear-gradient(to right, #0D1623, #1C2C47);
+    padding: 0.6rem;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
 
 }
