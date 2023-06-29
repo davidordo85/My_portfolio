@@ -46,24 +46,3 @@ body {
     padding: 0;
     margin: 0;
 }
-
-/* styles header */
-
-.navbar {
-    text-align: center;
-
-}
-
-.navbar-list>li {
-    height: 100%;
-    padding: 2rem;
-    border-bottom: solid 0.1rem black;
-}
-
-/* button menu */
-#toggleButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
