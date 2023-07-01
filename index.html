@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sections.css">
 </head>
 
 <body>
@@ -19,28 +20,71 @@
         </button>
         <div class="navbar-list" id="navbar-list">
         </div>
+
     </nav>
 
     </div>
-    <header class="header">
+    <header id="index" class="header">
         <div class="header-container">
             <div class="info">
                 <p>David Ordoñez</p>
                 <hr class="info-separator">
-                <div>
-                    <button class="button-cv">download cv</button>
-                    <button class="button-tlf">Call me</button>
-                </div>
+                <p>Full Stack development</p>
             </div>
-
-            <div class="image-info"></div>
         </div>
 
     </header>
-    <section>Home</section>
-    <section>About me</section>
-    <section>Projects</section>
-    <section>Contact</section>
+    <section id="about" class="about">
+        <h2>About me</h2>
+        <div class="description">
+            <p>
+                In the frontend development field, I have extensive knowledge of HTML5, CSS3, and JavaScript, including
+                frameworks and libraries like React and Redux. I have used these technologies to build interactive and
+                dynamic
+                user interfaces, single-page applications, and efficient application state management.
+            </p>
+            <p>
+                In terms of backend development, I have experience with Node.js and Express.js, which has allowed me to
+                create
+                robust and scalable web servers. I have also worked with both SQL and MongoDB databases, giving me the
+                ability
+                to design and manage efficient databases and perform complex queries.
+            </p>
+            <p>
+                Additionally, I have knowledge in implementing authentication and authorization, integrating external
+                APIs,
+                optimizing web application performance, and ensuring their security.
+            </p>
+            <p>
+                In summary, during the web BootCamp KeepCoding, I acquired solid skills in frontend and backend
+                development, as
+                well as database management and the implementation of advanced features in web applications.
+            </p>
+            <p>
+                I continue to expand my knowledge and skills through online courses, books, and active participation in
+                the
+                development community.
+            </p>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-container"></div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <a href="https://www.linkedin.com/in/david-ordo%C3%B1ez-escacena-b93a6621b/" target="_blank"><img
+                    src="./images/linkedin.svg" alt="LinkedIn" id="linkedin-ico"></a>
+            <a href="https://github.com/davidordo85" target="_blank"><img src="./images/github.svg" alt="GitHub"
+                    id="github-ico"></a>
+            <a href="tel:+34 682 65 90 78" target="_blank"><img src="./images/phone-solid.svg" alt="phone"
+                    id="phone-ico"></a>
+            <a href="mailto:davidordonezescacena@hotmail.es" target="_blank"><img src="./images/envelope-solid.svg"
+                    alt="email" id="email-ico"></a>
+
+        </div>
+    </section>
     <script type="module" src="./js/index.js"></script>
 </body>
 

@@ -1,39 +1,19 @@
-.header {}
-
 .header-container {
+    padding: 3rem;
     display: flex;
-}
-
-.info,
-.image-info {
-    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
     display: flex;
     margin: 0.5rem;
-    flex-basis: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.image-info {
-    margin: 0.5rem;
-    flex-basis: 60%;
-    height: 30vh;
-    background-image: url('../images/personal-img.jpg');
-    background-size: cover;
-}
-
 .info-separator {
     width: 30%;
     margin: 1rem 0 1rem 0;
-}
-
-.button-cv,
-.button-tlf {
-    background: linear-gradient(#141E30, #243B55);
-    border: none;
-    padding: 0.2rem;
 }

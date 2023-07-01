@@ -1,0 +1,36 @@
+.about {
+    margin: 1rem;
+}
+
+.about>h2,
+.projects>h2,
+.contact>h2 {
+    text-align: center;
+}
+
+.description,
+.contact-container {
+    background-color: #2C3346;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.description p {
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+#phone-ico,
+#linkedin-ico,
+#github-ico,
+#email-ico {
+    width: 2rem;
+    height: 2rem;
+}

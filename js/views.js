@@ -2,14 +2,14 @@ export const navView = () => {
   return `
     <ul class="container-list">
       <li class="navbar-item">
-        <a href="#">Home</a>
+        <a href="#index">Home</a>
       </li>
-      <li class="navbar-item"><a href="#">About me</a></li>
+      <li class="navbar-item"><a href="#about">About me</a></li>
       <li class="navbar-item">
-        <a href="#">Projects</a>
+        <a href="#projects">Projects</a>
       </li>
       <li class="navbar-item">
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </li>
     </ul>
   `;
