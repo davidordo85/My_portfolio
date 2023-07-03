@@ -6,6 +6,13 @@
 .projects>h2,
 .contact>h2 {
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+.description>p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+
 }
 
 .description,
@@ -16,9 +23,6 @@
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-.description p {
-    margin-bottom: 1rem;
-}
 
 .contact-container {
     display: flex;
@@ -33,4 +37,24 @@
 #email-ico {
     width: 2rem;
     height: 2rem;
+}
+
+/* language list*/
+
+.programming-languages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.languages-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.languages-list li {
+    display: inline-block;
+    background-color: #1A1C23;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
 }

@@ -14,3 +14,7 @@ export const navView = () => {
     </ul>
   `;
 };
+
+export const languagesView = language => {
+  return `<p>${language}</p>`;
+};
