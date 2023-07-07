@@ -1,7 +1,3 @@
-.about {
-    margin: 1rem;
-}
-
 .about>h2,
 .projects>h2,
 .contact>h2 {
@@ -16,11 +12,40 @@
 }
 
 .description,
-.contact-container {
+.contact-container,
+.projects-container {
     background-color: #2C3346;
+    margin: 1rem;
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+
+.project1-container {
+    background-color: #2C3346;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.project1-container>img {
+    width: 100px;
+    height: 100px;
+}
+
+.container img {
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container:hover {
+    background-color: #e0e0e0;
 }
 
 
@@ -37,24 +62,4 @@
 #email-ico {
     width: 2rem;
     height: 2rem;
-}
-
-/* language list*/
-
-.programming-languages {
-    display: flex;
-    justify-content: space-around;
-}
-
-.languages-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.languages-list li {
-    display: inline-block;
-    background-color: #1A1C23;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
 }
