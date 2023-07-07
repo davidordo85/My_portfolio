@@ -9,8 +9,6 @@
     height: var(--navbar-height);
 }
 
-.logo {}
-
 .container-list {
     display: flex;
     flex-direction: column;
