@@ -15,6 +15,6 @@ export const navView = () => {
   `;
 };
 
-export const languagesView = language => {
-  return `<p>${language}</p>`;
+export const weatherView = weatherData => {
+  return `<p></p>`;
 };
