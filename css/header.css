@@ -1,7 +1,5 @@
 .header-container {
     padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .info {
@@ -15,30 +13,4 @@
 .info-separator {
     width: 30%;
     margin: 1rem 0 1rem 0;
-}
-
-.time-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.loader {
-    border: 0.1rem solid #134c63;
-    border-top: 0.1rem solid #34db34;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
