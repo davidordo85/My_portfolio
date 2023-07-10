@@ -7,31 +7,14 @@
     left: 0;
     border: 0.1rem solid black;
     height: var(--navbar-height);
-}
-
-.container-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: black;
-    height: calc(100vh - var(--navbar-height));
-    opacity: 0.65;
+    align-items: center;
 }
 
-.navbar-item a {
-    color: #C0C0C0;
-    display: block;
-    text-align: center;
-    line-height: 3rem;
-    font-size: 2rem;
+.list {
+    display: flex;
 }
 
-
-/* button menu */
-#toggleButton {
-    background: linear-gradient(to right, #0D1623, #1C2C47);
-    padding: 0.6rem;
-    border: none;
-    cursor: pointer;
-
+.navbar-item {
+    margin-left: 1rem;
 }

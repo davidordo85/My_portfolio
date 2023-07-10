@@ -1,4 +1,4 @@
-import ButtonNavbarController from './controller/ButtonNavbarController.js';
+import CheckboxStyleChange from './controller/CheckboxStyleChange.js';
 import NavbarRenderController from './controller/NavbarController.js';
 
 window.addEventListener('DOMContentLoaded', async event => {
@@ -6,5 +6,6 @@ window.addEventListener('DOMContentLoaded', async event => {
   const navbar = new NavbarRenderController(nav);
   navbar.render();
 
-  new ButtonNavbarController('toggleButton', 'navbar-list');
+  const checkbox = document.querySelector('.checkbox');
+  new CheckboxStyleChange(checkbox);
 });
