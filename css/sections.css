@@ -92,3 +92,13 @@
     width: 2rem;
     height: 2rem;
 }
+
+/* carousel */
+
+.carousel-button-container {
+    display: flex;
+}
+
+.carousel-button {
+    width: 50%;
+}
