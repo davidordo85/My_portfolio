@@ -1,0 +1,47 @@
+/* navbar styles */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0.1rem solid black;
+    background: linear-gradient(#141E30, #243B55);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    justify-content: center;
+    background: linear-gradient(#243B55, #141E30);
+}
+
+.footer,
+.navbar {
+
+    height: var(--navbar-height);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.list {
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 1rem;
+}
+
+/* footer styles */
+
+#phone-ico,
+#linkedin-ico,
+#github-ico,
+#email-ico {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    z-index: -1;
+}
