@@ -1,6 +1,7 @@
 import CheckboxStyleChange from './controller/CheckboxStyleChange.js';
 import NavbarRenderController from './controller/NavbarController.js';
 import ProjectsController from './controller/ProjectsController.js';
+import projectsData from '../data/projects.js';
 
 window.addEventListener('DOMContentLoaded', async event => {
   const nav = document.querySelector('.navbar-list');
@@ -12,5 +13,5 @@ window.addEventListener('DOMContentLoaded', async event => {
 
   const projectsRender = document.querySelector('.projects-container');
   const projects = new ProjectsController(projectsRender);
-  projects.readJSONFILE('../data/projects.json');
+  projects.renderProjects(projectsData);
 });
