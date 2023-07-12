@@ -29,15 +29,18 @@
 }
 
 
-.project1-container,
-.project2-container {
+.carousel-item {
     background-color: #4D5470;
     border-radius: 8px;
     text-align: center;
+    display: none;
 }
 
-.project1-container>img,
-.project2-container>img {
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item>img {
     width: 100px;
     height: 100px;
 }
@@ -96,9 +99,25 @@
 /* carousel */
 
 .carousel-button-container {
+    padding: 1rem 0 0 0;
     display: flex;
+    align-items: center;
 }
 
 .carousel-button {
     width: 50%;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.number-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 4px;
 }

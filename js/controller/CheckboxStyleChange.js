@@ -73,7 +73,7 @@ export default class CheckboxStyleChange extends BaseController {
   }
 
   projectBackground(color) {
-    const projects = document.querySelectorAll('.projects-container > div');
+    const projects = document.querySelectorAll('.carousel-item');
     projects.forEach(project => {
       if (color === 'light') {
         project.style.background = '#BFBFBF';
