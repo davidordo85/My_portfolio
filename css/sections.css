@@ -1,5 +1,6 @@
 .about>h2,
-.projects>h2 {
+.projects>h2,
+.project-item>h3 {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -21,29 +22,13 @@
 
 .project-container {
     display: flex;
-    flex-direction: column;
 }
 
-
-
-.container img {
-    margin-bottom: 10px;
+.project-images {
+    display: flex;
+    justify-content: space-around;
 }
 
-.container p {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.container:hover {
-    background-color: #e0e0e0;
-}
-
-#phone-ico,
-#linkedin-ico,
-#github-ico,
-#email-ico {
-    width: 2rem;
-    height: 2rem;
+.project-images img {
+    width: 100px;
 }
