@@ -1,4 +1,5 @@
 import BaseController from './BaseController.js';
+// TODO: refactorizar esta clase
 
 export default class CheckboxStyleChange extends BaseController {
   constructor(element) {
@@ -15,14 +16,12 @@ export default class CheckboxStyleChange extends BaseController {
         this.textColor(color);
         this.bodyBackground(color);
         this.sectionBackground(color);
-        this.projectBackground(color);
       } else {
         color = 'dark';
         this.styleNavbarAndFooter(color);
         this.textColor(color);
         this.bodyBackground(color);
         this.sectionBackground(color);
-        this.projectBackground(color);
       }
     });
   }
@@ -68,17 +67,6 @@ export default class CheckboxStyleChange extends BaseController {
         section.style.background = '#CCCCCC';
       } else {
         section.style.removeProperty('background');
-      }
-    });
-  }
-
-  projectBackground(color) {
-    const projects = document.querySelectorAll('.carousel-item');
-    projects.forEach(project => {
-      if (color === 'light') {
-        project.style.background = '#BFBFBF';
-      } else {
-        project.style.removeProperty('background');
       }
     });
   }
