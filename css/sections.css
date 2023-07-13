@@ -73,7 +73,16 @@
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
     user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .next {
