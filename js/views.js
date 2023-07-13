@@ -20,7 +20,7 @@ export const projectsView = ({ index, project, length }) => {
   let linksHTML = '';
 
   for (const image of images) {
-    imagesHTML += `<img src="../images/${image}" alt="Project Image">`;
+    imagesHTML += `<img src="./images/${image}" alt="Project Image">`;
   }
 
   for (const link of links) {

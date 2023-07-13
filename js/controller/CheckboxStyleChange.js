@@ -1,27 +1,35 @@
 import BaseController from './BaseController.js';
 // TODO: refactorizar esta clase
 
+const LIGHT_COLOR = 'light';
+const DARK_COLOR = 'dark';
+
 export default class CheckboxStyleChange extends BaseController {
   constructor(element) {
     super(element);
     this.handleChecked();
   }
 
+  setLightStyle() {
+    this.styleNavbarAndFooter(LIGHT_COLOR);
+    this.textColor(LIGHT_COLOR);
+    this.bodyBackground(LIGHT_COLOR);
+    this.sectionBackground(LIGHT_COLOR);
+  }
+
+  setDarkStyle() {
+    this.styleNavbarAndFooter(DARK_COLOR);
+    this.textColor(DARK_COLOR);
+    this.bodyBackground(DARK_COLOR);
+    this.sectionBackground(DARK_COLOR);
+  }
+
   handleChecked() {
-    let color = '';
     this.element.addEventListener('change', event => {
       if (event.target.checked) {
-        color = 'light';
-        this.styleNavbarAndFooter(color);
-        this.textColor(color);
-        this.bodyBackground(color);
-        this.sectionBackground(color);
+        this.setLightStyle();
       } else {
-        color = 'dark';
-        this.styleNavbarAndFooter(color);
-        this.textColor(color);
-        this.bodyBackground(color);
-        this.sectionBackground(color);
+        this.setDarkStyle();
       }
     });
   }
