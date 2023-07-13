@@ -3,12 +3,12 @@ export const navView = () => {
       <li class="navbar-item">
         <a href="#index">Home</a>
       </li>
-      <li class="navbar-item"><a href="#about">About me</a></li>
+      <li class="navbar-item"><a href="#about">Sobre mi</a></li>
       <li class="navbar-item">
-        <a href="#projects">Projects</a>
+        <a href="#projects">Proyectos</a>
       </li>
       <li class="navbar-item">
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contacto</a>
       </li>
   `;
 };
@@ -29,12 +29,12 @@ export const projectsView = ({ index, project, length }) => {
       </a>`;
   }
 
-  return `<div class="project-item fade">
+  return `<div class="project-item fade" id>
             <div class="numberText">${index + 1} / ${length}</div>
             <h3>${name}</h3>
             <div class="project-images">${imagesHTML}</div>
-            <p class="project-description">${description}</p>
-            <p class="project-instructions">${instructions}</p>
+            <p class="project-description"><strong>Descripcion: </strong>${description}</p>
+            <p class="project-instructions"><strong>Intrucciones: </strong>${instructions}</p>
             <div class="project-links">${linksHTML}</div>
           </div>`;
 };

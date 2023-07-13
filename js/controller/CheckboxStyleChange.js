@@ -29,6 +29,7 @@ export default class CheckboxStyleChange extends BaseController {
   styleNavbarAndFooter(color) {
     const navbar = document.querySelector('.navbar');
     const footer = document.querySelector('.footer');
+
     if (color === 'light') {
       navbar.style.background = 'linear-gradient(#F8F9FA, #D3D3D3)';
       footer.style.background = 'linear-gradient(#D3D3D3, #F8F9FA)';

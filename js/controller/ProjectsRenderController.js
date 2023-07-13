@@ -1,7 +1,7 @@
 import BaseController from './BaseController.js';
 import { projectsView } from '../views.js';
 
-export default class ProjectsController extends BaseController {
+export default class ProjectsRenderController extends BaseController {
   renderProjects(projects) {
     projects.forEach((project, index) => {
       const article = document.createElement('article');
