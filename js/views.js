@@ -10,6 +10,18 @@ export const navView = () => {
       <li class="navbar-item">
         <a href="#contact">Contacto</a>
       </li>
+      <div class="switch-container">
+        <div class="switch-image sun-image">
+          <img width="17" height="17" src="https://img.icons8.com/color/48/moon-satellite.png" alt="sun" />
+        </div>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" title="checkbox-mode">
+          <span class="switch-slider"></span>
+        </label>
+        <div class="switch-image moon-image">
+          <img width="17" height="17" src="https://img.icons8.com/fluency/48/sun.png" alt="moon-satellite" />
+        </div>
+      </div>
   `;
 };
 

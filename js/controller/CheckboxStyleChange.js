@@ -70,7 +70,8 @@ export default class CheckboxStyleChange extends BaseController {
   sectionBackground(color) {
     const description = document.querySelector('.description');
     const project = document.querySelector('.projects-container');
-    const sectionElements = [description, project];
+    const infographic = document.querySelector('.infographic');
+    const sectionElements = [description, project, infographic];
     sectionElements.forEach(section => {
       if (color === 'light') {
         section.style.background = '#CCCCCC';

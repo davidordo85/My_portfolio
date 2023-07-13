@@ -15,11 +15,53 @@
     padding: 2rem;
 }
 
+.infographic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #3a4259;
+    word-wrap: break-word;
+}
+
+.section {
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.section-title {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "\25BC";
+    margin-left: 5px;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-content {
+    display: none;
+    padding-top: 10px;
+}
+
+.section.active .section-title::after {
+    transform: rotate(180deg);
+}
+
 .language-list {
     column-count: 3;
     list-style-type: none;
     padding: 0;
     margin-bottom: 15px;
+    max-width: 300px;
 }
 
 .language-list li {

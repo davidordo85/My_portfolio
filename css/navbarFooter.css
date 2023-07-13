@@ -8,6 +8,56 @@
     background: linear-gradient(#141E30, #243B55);
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.switch-container {
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 17px;
+}
+
+.switch-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 17px;
+    transition: 0.4s;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch input:checked+.switch-slider {
+    background-color: #2196F3;
+}
+
+.switch input:checked+.switch-slider:before {
+    transform: translateX(17px);
+
+}
+
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
 }
 
 .footer {
