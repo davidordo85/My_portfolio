@@ -10,7 +10,6 @@ export default class AboutMeController extends BaseController {
     this.element.forEach(element => {
       var title = element.querySelector('.section-title');
       var content = element.querySelector('.section-content');
-      console.log(title, content);
       title.addEventListener('click', event => {
         var isActive = element.classList.toggle('active');
         content.style.display = isActive ? 'block' : 'none';

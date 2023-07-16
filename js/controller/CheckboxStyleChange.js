@@ -71,12 +71,14 @@ export default class CheckboxStyleChange extends BaseController {
     const description = document.querySelector('.description');
     const project = document.querySelector('.projects-container');
     const infographic = document.querySelector('.infographic');
-    const sectionElements = [description, project, infographic];
+    const sectionElements = [description, project];
     sectionElements.forEach(section => {
       if (color === 'light') {
         section.style.background = '#CCCCCC';
+        infographic.style.background = '#a7a7a7';
       } else {
         section.style.removeProperty('background');
+        infographic.style.removeProperty('background');
       }
     });
   }

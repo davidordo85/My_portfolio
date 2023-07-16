@@ -41,7 +41,7 @@
 }
 
 .section-title::after {
-    content: "\25BC";
+    content: "\1D155";
     margin-left: 5px;
     transform: rotate(0deg);
     transition: transform 0.2s ease-in-out;
@@ -184,4 +184,10 @@
 
 .project-item p {
     margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .project-images img {
+        width: 300px;
+    }
 }

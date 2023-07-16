@@ -6,9 +6,9 @@
     left: 0;
     border: 0.1rem solid black;
     background: linear-gradient(#141E30, #243B55);
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    justify-content: center;
 }
 
 .switch-container {
@@ -99,3 +99,5 @@
 .icons8 {
     font-size: 0.8rem;
 }
+
+@media (min-width: 768px) {}
