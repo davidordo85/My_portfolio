@@ -20,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
     background-color: #3a4259;
@@ -56,28 +55,21 @@
     transform: rotate(180deg);
 }
 
-.language-list {
+/* .language-list {
     column-count: 3;
     list-style-type: none;
     padding: 0;
     margin-bottom: 15px;
     max-width: 300px;
+} */
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .language-list li {
-    display: inline-block;
     margin: 0.2rem;
-    padding: 6px 12px;
-    border: solid 0.1rem #3a4259;
-    border-radius: 4px;
-}
-
-.language-list li:last-child {
-    margin-right: 0;
-}
-
-.language-list li:hover {
-    background-color: #e2e2e2;
+    padding: 0.3rem;
 }
 
 .description,
@@ -190,4 +182,6 @@
     .project-images img {
         width: 300px;
     }
+
+
 }
